@@ -110,11 +110,42 @@ li.dropdown {
 				<a onclick=Visualization(7) href="#">Literacy Percentage Female</a>
 			</div>
 		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" onclick="Worker_Population()">Total Worker Population</a>
+			<div class="dropdown-content" id="_Worker_Population">
+				<a onclick=Visualization(8) href="#">Percentage Total Worker Population Person</a>
+				<a onclick=Visualization(9) href="#">Percentage Total Worker Population Male</a>
+				<a onclick=Visualization(10) href="#">Percentage Total Worker Population Female</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Working_Population()">Main Working Population</a>
+			<div class="dropdown-content" id="_Main_Working_Population">
+				<a onclick=Visualization(11) href="#">Percentage Main Working Population Person</a>
+				<a onclick=Visualization(12) href="#">Percentage Main Working Population Male</a>
+				<a onclick=Visualization(13) href="#">Percentage Main Working Population Female</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Agricultural_Labourers()">Main Agricultural Labourers</a>
+			<div class="dropdown-content" id="_Main_Agricultural_Labourers">
+				<a onclick=Visualization(14) href="#">Percentage Main Agricultural Labourers Person</a>
+				<a onclick=Visualization(15) href="#">Percentage Main Agricultural Labourers Male</a>
+				<a onclick=Visualization(16) href="#">Percentage Main Agricultural Labourers Female</a>
+			</div>
+		</li>
+		<li class="dropdown">
+			<a href="javascript:void(0)" class="dropbtn" onclick="Industries()">Main Household Industries Population</a>
+			<div class="dropdown-content" id="_Industries">
+				<a onclick=Visualization(17) href="#">Percentage Main Household Industries Population Person</a>
+				<a onclick=Visualization(18) href="#">Percentage Main Household Industries Population Male</a>
+				<a onclick=Visualization(19) href="#">Percentage Main Household Industries Population Female</a>
+			</div>
+		</li>
 		</ul>
 	
-	
-	<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 150 950 1150" class="mapsvg" stroke="none" >
-
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="50 100 950 1200" class="mapsvg" stroke="none" style = "width : 900">
+	<g title="India" class="country" id="z">
 	<g title="Bihar" style="fill:red" class="state" id="z10" >
 	 <path class="dist" id="z203" title="Paschim Champaran" style="fill:" d="M 582.47648,570.42447 C 581.62293,570.02087 579.94177,568.84517 578.74057,567.81179 L 576.55657,565.93292 L 576.55657,564.49299 C 576.55657,562.86425 576.1871,562.49054 574.57684,562.49054 C 574.06024,562.49054 573.23857,562.21515 572.72498,561.86988 C 571.73297,561.20297 570.0357,558.8367 570.0357,558.12059 C 570.0357,557.88053 569.77985,557.45256 569.46713,557.16956 C 568.43788,556.23811 568.27227,555.62677 568.27093,552.75411 C 568.26972,550.13191 568.22719,549.91166 567.62821,549.42575 C 567.22351,549.09745 566.56549,548.9054 565.84531,548.9054 C 564.91212,548.9054 564.60531,548.76907 564.16384,548.15822 C 563.6546,547.4536 562.331,544.27993 562.49011,544.14503 C 562.53069,544.11063 563.59552,543.19831 564.85641,542.11765 C 568.18039,539.2688 568.18123,539.2686 569.71731,540.95224 C 570.41545,541.71746 571.29233,542.52565 571.66592,542.74822 C 572.03951,542.97079 574.49956,543.64875 577.1327,544.25481 C 585.13848,546.09746 585.46912,546.31461 585.69246,549.87645 C 585.93474,553.74042 587.55532,556.15616 590.24346,556.66046 C 591.39907,556.87725 591.50051,557.35855 590.71572,558.9013 C 589.75331,560.79322 589.05489,563.57713 589.05489,565.52138 C 589.05489,566.65225 588.89446,567.71842 588.65444,568.18257 C 588.21741,569.02769 585.18804,571.19317 584.47291,571.17165 C 584.22843,571.16428 583.33003,570.82806 582.47648,570.42446 L 582.47648,570.42447 z" />
 	 <path class="dist" id="z204"  title="Purba Champaran" d="M 594.0844,580.42604 C 593.65653,579.97945 593.08345,579.54328 592.81089,579.45678 C 592.53834,579.37027 592.31533,579.08718 592.31533,578.82769 C 592.31533,578.19732 590.73016,576.70121 589.82649,576.4787 C 589.12891,576.30693 584.97935,572.31635 584.97935,571.81726 C 584.97935,571.68236 585.77521,571.04873 586.74792,570.40921 C 588.87759,569.00903 589.3266,568.23482 589.3266,565.96278 C 589.3266,564.10804 590.10612,560.89761 590.96547,559.21315 C 591.25958,558.63663 591.50022,557.85441 591.50022,557.47486 C 591.50022,556.67849 591.66735,556.65491 593.62292,557.17545 C 595.26768,557.61326 596.39087,558.26416 596.39087,558.7795 C 596.39087,558.97309 596.57478,559.75079 596.79957,560.50773 L 597.20826,561.88398 L 598.90526,561.99305 C 600.98091,562.12645 602.87224,562.99298 604.18531,564.41215 C 604.9019,565.18665 605.39655,565.471 606.13437,565.53259 C 607.09228,565.61254 607.12577,565.652 607.20802,566.79742 C 607.25472,567.44769 607.16892,568.33543 607.01737,568.77017 C 606.82163,569.33165 606.86029,570.60256 607.15084,573.15777 C 607.62394,577.31839 607.47361,580.06097 606.76359,580.223 C 606.51302,580.28018 605.95246,580.15202 605.5179,579.93821 C 605.06889,579.71728 603.30938,579.45685 601.44236,579.33495 C 598.66672,579.15374 598.08415,579.18498 597.68786,579.5363 C 597.42988,579.76501 597.28339,580.05666 597.36234,580.18441 C 597.44131,580.31217 597.339,580.35265 597.13502,580.27437 C 596.93103,580.19609 596.53893,580.3809 596.26369,580.68504 C 595.57411,581.44702 594.99681,581.37841 594.08439,580.42604 L 594.0844,580.42604 z" />
@@ -864,20 +895,12 @@ li.dropdown {
 
 	<g title="Pak occupied Kashmir" style="fill:lightblue" class="state" id="pak">
 	<path class="dist" id="pakdist" title="Pok : No Data" d="M 281.35767,343.28796 C 280.45294,342.28825 278.5125,341.17486 277.07464,340.83045 C 276.29498,340.6437 274.49556,339.80559 273.07591,338.96799 C 271.65626,338.13039 269.2438,336.9145 267.71487,336.26602 C 265.09093,335.15311 264.91957,335.03138 264.65973,334.0959 C 264.264,332.67115 264.32243,331.52298 264.93071,328.77136 C 265.60339,325.72834 265.59753,324.98625 264.88867,323.45939 C 264.57647,322.78692 264.25888,321.43688 264.18291,320.45929 C 264.05773,318.84837 264.12762,318.51778 264.9289,316.93045 C 265.69883,315.40524 265.80685,314.93514 265.76534,313.29033 C 265.73913,312.25153 265.35505,309.92699 264.91184,308.12468 C 263.26839,301.44171 263.27848,301.57555 264.24557,299.27785 C 264.81447,297.92621 264.92483,297.23042 264.92483,294.99536 L 264.92483,292.32672 L 263.67151,291.11541 C 261.55948,289.07418 261.31552,287.53292 262.87559,286.0871 C 263.30387,285.69019 263.56632,285.15296 263.56632,284.67321 C 263.56632,283.50198 263.95012,283.29715 265.85782,283.45028 C 268.57729,283.66857 269.15747,283.34506 271.17636,280.48463 C 273.54436,277.12957 275.91559,275.45276 279.13318,274.85796 C 281.34688,274.44873 281.72462,274.16833 282.60943,272.27753 C 283.22177,270.96898 283.43825,270.03061 283.57624,268.08664 C 283.754,265.58235 283.75385,265.58156 282.86812,264.28359 C 281.37021,262.08851 279.41486,261.11808 275.85811,260.80455 C 272.96793,260.54978 272.5325,260.35717 272.5325,259.33345 C 272.5325,258.17422 273.35526,256.68153 274.96505,254.92017 C 276.63224,253.09599 276.78619,252.00069 275.58916,250.47981 C 274.31034,248.85502 273.27967,248.38112 271.1594,248.44303 C 269.83427,248.48173 268.92742,248.34393 267.99628,247.96239 C 267.27833,247.6682 265.8107,247.36391 264.7349,247.28618 C 262.63661,247.13459 262.35736,247.03098 259.96863,245.51786 L 258.40872,244.52975 L 258.40634,241.46637 C 258.40355,237.87062 258.59211,238.0652 254.66084,237.60134 C 253.35724,237.44753 250.75712,237.14007 248.8828,236.9181 C 247.00849,236.69613 244.92996,236.51019 244.26385,236.50489 C 242.77609,236.49306 242.11757,236.1408 241.03757,234.77902 C 240.30606,233.85666 240.19988,233.5099 240.19988,232.04338 C 240.19988,229.81769 240.81567,227.84096 241.80397,226.89411 C 242.24493,226.47164 242.73994,225.80195 242.90398,225.40592 C 243.13962,224.83704 243.59465,224.5585 245.0711,224.07932 C 246.09897,223.74573 247.20293,223.47279 247.52432,223.47279 C 247.89343,223.47279 249.07902,222.53456 250.74307,220.92556 C 252.84079,218.89724 253.79874,218.18484 255.44542,217.42854 C 256.58281,216.90615 257.62097,216.31011 257.75246,216.10401 C 257.88396,215.8979 258.06026,214.73132 258.14424,213.51162 C 258.26961,211.69067 258.42922,211.10308 259.03651,210.22676 C 260.01141,208.81999 261.05947,208.5023 263.63422,208.8331 C 264.71764,208.9723 266.45995,209.07034 267.506,209.05097 C 268.55206,209.0316 270.81399,209.10828 272.5325,209.22137 C 275.11411,209.39126 275.71878,209.51423 276.01212,209.92902 C 276.64002,210.8169 281.14517,210.44861 281.91734,209.44627 C 282.76153,208.35045 282.69022,207.79985 281.5251,206.4181 C 280.91282,205.69198 280.41188,205.00189 280.41188,204.88456 C 280.41188,204.67981 283.01092,204.78366 287.09216,205.15148 C 288.71775,205.29799 289.18705,205.23859 290.10531,204.77013 C 290.72871,204.4521 292.46175,204.03828 294.16534,203.80067 C 298.14557,203.24553 300.69269,202.44216 301.8764,201.36859 C 302.39943,200.89423 303.20611,200.1666 303.66903,199.75162 L 304.51071,198.99712 L 306.073,201.07281 C 307.41726,202.85883 307.88752,203.268 309.44271,204.00483 C 311.06761,204.77467 311.50554,204.86115 313.77915,204.86115 L 316.30817,204.86115 L 318.18249,202.82338 C 319.21337,201.70261 320.06215,200.63708 320.06865,200.45554 C 320.08015,200.13456 320.9072,199.56107 321.35321,199.56481 C 321.88849,199.56929 322.75337,201.43966 322.92282,202.95924 C 323.17761,205.24398 324.8931,208.63184 326.93764,210.88791 C 327.83326,211.87619 329.12436,213.5532 329.80674,214.61458 C 331.49996,217.24824 333.25156,219.37129 334.4713,220.26829 C 335.03154,220.68031 337.06629,221.83351 338.99294,222.83097 C 342.57261,224.68423 343.51372,225.33121 346.8432,228.22775 C 348.6129,229.76734 351.93668,231.58938 353.78346,232.03229 C 354.63104,232.23557 358.02969,236.35753 358.54882,237.81184 C 358.74753,238.36852 358.91548,239.22743 358.92204,239.72052 C 358.93853,240.96014 359.57577,242.07892 361.28745,243.87345 C 362.63072,245.28172 363.06704,245.53362 366.6461,246.96714 C 373.17095,249.58054 379.93996,252.88477 380.32852,253.64611 C 380.61753,254.21234 380.59989,254.35138 380.20992,254.58275 C 379.04434,255.27422 378.22486,256.47697 378.22486,257.49618 C 378.22486,258.47802 378.94161,259.60925 379.5637,259.60925 C 380.01226,259.60925 384.06408,260.19725 384.14121,260.27353 C 384.41137,260.54063 382.98295,262.9251 381.99604,263.85448 C 381.34153,264.47084 380.56099,265.38479 380.26146,265.88548 C 379.79541,266.66453 379.30572,266.94601 376.86591,267.83724 C 375.29787,268.41002 373.7642,269.11422 373.45774,269.40213 C 373.15127,269.69003 371.92828,270.45396 370.73997,271.09973 C 365.31425,274.04831 364.38579,274.66488 364.37674,275.32552 C 364.3712,275.72997 364.16913,276.0143 363.82286,276.10485 C 363.44392,276.20395 363.15179,276.68052 362.86474,277.66795 L 362.45178,279.0885 L 360.89665,279.45575 C 359.6644,279.74677 359.11587,280.06238 358.25471,280.97584 C 357.26873,282.02168 356.85279,282.22189 353.77162,283.13368 C 351.90366,283.68645 349.25149,284.61431 347.8779,285.19558 L 345.38046,286.25243 L 342.44385,285.58116 C 337.84192,284.52919 334.79536,284.0643 332.49723,284.06336 C 331.05029,284.06277 329.41243,283.8143 327.33488,283.28021 C 318.42407,280.98945 318.65097,281.0267 316.90306,281.56726 C 315.39213,282.03454 315.21695,282.03499 312.74451,281.57813 C 309.3115,280.94377 304.27276,280.94576 299.97448,281.58317 C 295.29221,282.27751 294.3969,282.28833 293.51182,281.66122 C 292.09456,280.65703 288.06721,279.17185 286.76144,279.17185 C 285.67628,279.17185 285.29441,279.34361 283.89213,280.46243 C 282.61732,281.47956 282.03592,282.2136 281.14831,283.92664 C 280.52886,285.12214 279.86068,286.58933 279.66343,287.18708 C 279.01181,289.16183 278.23826,293.56334 278.23826,295.29627 C 278.23826,296.47152 278.02723,297.53967 277.55901,298.73444 C 277.15736,299.75933 276.87781,301.02962 276.875,301.84261 C 276.8724,302.59881 276.68501,304.31793 276.45858,305.66286 C 276.23217,307.00779 276.07023,309.26971 276.09873,310.68936 C 276.12724,312.10901 276.11065,313.3928 276.06187,313.54224 C 275.91526,313.99136 276.33331,315.81372 277.33028,319.07161 C 277.84935,320.76782 278.20917,322.22053 278.12987,322.29984 C 278.05056,322.37914 278.10433,322.66573 278.24936,322.93671 C 278.46367,323.33716 278.32749,323.57091 277.52193,324.18534 L 276.53083,324.9413 L 276.7135,329.83817 C 276.96901,336.6876 276.96991,336.69168 278.36134,337.36769 C 279.32836,337.83752 279.70682,338.28954 280.78481,340.26236 C 282.13018,342.72453 282.54377,343.83709 282.11367,343.83709 C 281.97118,343.83709 281.63099,343.58999 281.35767,343.28797 L 281.35767,343.28796 z" />
-	</g>  
+	</g>
+	</g>
 	</svg>
+
 <script>
-var distArray =["z001","z002","z003","z004","z005","z006","z007","z008","z009","z010","z011","z012","z013","z014","z015","z016","z017","z018","z019","z020","z021","z022","z023","z024","z025","z026","z027","z028","z029","z030","z031","z032","z033","z034","z035","z036","z037","z038","z039","z040","z041","z042","z043","z044","z045","z046","z047","z048","z049","z050","z051","z052","z053","z054","z055","z056","z057","z058","z059","z060","z061","z062","z063","z064","z065","z066","z067","z068","z069","z070","z071","z072","z073","z074","z075","z076","z077","z078","z079","z080","z081","z082","z083","z084","z085","z086","z087","z088","z089","z090","z091","z092","z093","z094","z095","z096","z097","z098","z099","z100","z101","z102","z103","z104","z105","z106","z107","z108","z109","z110","z111","z112","z113","z114","z115","z116","z117","z118","z119","z120","z121","z122","z123","z124","z125","z126","z127","z128","z129","z130","z131","z132","z133","z134","z135","z136","z137","z138","z139","z140","z141","z142","z143","z144","z145","z146","z147","z148","z149","z150","z151","z152","z153","z154","z155","z156","z157","z158","z159","z160","z161","z162","z163","z164","z165","z166","z167","z168","z169","z170","z171","z172","z173","z174","z175","z176","z177","z178","z179","z180","z181","z182","z183","z184","z185","z186","z187","z188","z189","z190","z191","z192","z193","z194","z195","z196","z197","z198","z199","z200","z201","z202","z203","z204","z205","z206","z207","z208","z209","z210","z211","z212","z213","z214","z215","z216","z217","z218","z219","z220","z221","z222","z223","z224","z225","z226","z227","z228","z229","z230","z231","z232","z233","z234","z235","z236","z237","z238","z239","z240","z241","z242","z243","z244","z245","z246","z247","z248","z249","z250","z251","z252","z253","z254","z255","z256","z257","z258","z259","z260","z261","z262","z263","z264","z265","z266","z267","z268","z269","z270","z271","z272","z273","z274","z275","z276","z277","z278","z279","z280","z281","z282","z283","z284","z285","z286","z287","z288","z289","z290","z291","z292","z293","z294","z295","z296","z297","z298","z299","z300","z301","z302","z303","z304","z305","z306","z307","z308","z309","z310","z311","z312","z313","z314","z315","z316","z317","z318","z319","z320","z321","z322","z323","z324","z325","z326","z327","z328","z329","z330","z331","z332","z333","z334","z335","z336","z337","z338","z339","z340","z341","z342","z343","z344","z345","z346","z347","z348","z349","z350","z351","z352","z353","z354","z355","z356","z357","z358","z359","z360","z361","z362","z363","z364","z365","z366","z367","z368","z369","z370","z371","z372","z373","z374","z375","z376","z377","z378","z379","z380","z381","z382","z383","z384","z385","z386","z387","z388","z389","z390","z391","z392","z393","z394","z395","z396","z397","z398","z399","z400","z401","z402","z403","z404","z405","z406","z407","z408","z409","z410","z411","z412","z413","z414","z415","z416","z417","z418","z419","z420","z421","z422","z423","z424","z425","z426","z427","z428","z429","z430","z431","z432","z433","z434","z435","z436","z437","z438","z439","z440","z441","z442","z443","z444","z445","z446","z447","z448","z449","z450","z451","z452","z453","z454","z455","z456","z457","z458","z459","z460","z461","z462","z463","z464","z465","z466","z467","z468","z469","z470","z471","z472","z473","z474","z475","z476","z477","z478","z479","z480","z481","z482","z483","z484","z485","z486","z487","z488","z489","z490","z491","z492","z493","z494","z495","z496","z497","z498","z499","z500","z501","z502","z503","z504","z505","z506","z507","z508","z509","z510","z511","z512","z513","z514","z515","z516","z517","z518","z519","z520","z521","z522","z523","z524","z525","z526","z527","z528","z529","z530","z531","z532","z533","z534","z535","z536","z537","z538","z539","z540","z541","z542","z543","z544","z545","z546","z547","z548","z549","z550","z551","z552","z553","z554","z555","z556","z557","z558","z559","z560","z561","z562","z563","z564","z565","z566","z567","z568","z569","z570","z571","z572","z573","z574","z575","z576","z577","z578","z579","z580","z581","z582","z583","z584","z585","z586","z587","z588","z589","z590","z591","z592","z593","z594","z595","z596","z597","z598","z599","z600","z601","z602","z603","z604","z605","z606","z607","z608","z609","z610","z611","z612","z613","z614","z615","z616","z617","z618","z619","z620","z621","z622","z623","z624","z625","z626","z627","z628","z629","z630","z631","z632","z633","z634","z635","z636","z637","z638","z639","z640"];
-//state codes
-var stateArray=["z01","z02","z03","z04","z05","z06","z07","z08","z09","z10","z11","z12","z13","z14","z15","z16","z17","z18","z19","z20","z21","z22","z23","z24","z25","z26","z27","z28","z29","z30","z31","z32","z33","z34","z35"];
-//data fields
-var fieldArray= ["State","District","Level","Name","TRU","Area","NOH","TP","TPM","TPF","PA06","PAO6M","PA06F","SCP","SCM","SCF","STP","STM","STF","LP","LPM","LPF","ILP","ILM","ILF","TWP","TWPM","TWPF","MWP","MWPM","MWPF","MCP","MCPM","MCPF","MALP","MALPM","MALPF","MHIP","MHIPM","MHIPF","MOWP","MOWPM","MOWPF","mWP","mWPM","mWPF","mCP","mCPM","mCPF","mALP","mALPM","mALPF","mHIP","mHIPM","mHIPF","mOWP","mOWPM","mOWPF","NWP","NWPM","NWPF"];
-var numfield = fieldArray.length;
-var numdist = distArray.length;
-var numstate = stateArray.length;
-var truenames = ["State","District","Level","Name","TRU","Area","No of Households","Total Population Person","Total Population Male","Total Population Female","Population in the age group 0-6 Person","Population in the age group 0-6 Male","Population in the age group 0-6 Female","Scheduled Castes population Persons","Scheduled Castes population Male","Scheduled Castes population Female","Scheduled Tribes population Person","Scheduled Tribes population Male","Scheduled Tribes population Female","Literates Population Person","Literates Population Male","Literates Population Female","Illiterate Persons","Illiterate Male","Illiterate Female","Total Worker Population Person","Total Worker Population Male","Total Worker Population Female","Main Working Population Person","Main Working Population Male","Main Working Population Female","Main Cultivator Population Person","Main Cultivator Population Male","Main Cultivator Population Female","Main Agricultural Labourers Population Person","Main Agricultural Labourers Population Male","Main Agricultural Labourers Population Female","Main Household Industries Population Person","Main Household Industries Population Male","Main Household Industries Population Female","Main Other Workers Population Person","Main Other Workers Population Male","Main Other Workers Population Female","Marginal Worker Population Person","Marginal Worker Population Male","Marginal Worker Population Female","Marginal Cultivator Population Person","Marginal Cultivator Population Male","Marginal Cultivator Population Female","Marginal Agriculture Labourers Population Person","Marginal Agriculture Labourers Population Male","Marginal Agriculture Labourers Population Female","Marginal Household Industries Population Person","Marginal Household Industries Population Male","Marginal Household Industries Population Female","Marginal Other Workers Population Person","Marginal Other Workers Population Male","Marginal Other Workers Population Female","Non Working Population Person","Non Working Population Male","Non Working Population Female"]
-
-
+var numdist = 640;
 var distData = 
 [
   {
@@ -41210,6 +41233,30 @@ var distData =
 	{
 		document.getElementById("_Literacy").classList.toggle("show");
 	}
+	function Worker_Population()
+	{
+		document.getElementById("_Worker_Population").classList.toggle("show");
+	}
+	function Main_Working_Population()
+	{
+		document.getElementById("_Main_Working_Population").classList.toggle("show");
+	}
+	function Main_Agricultural_Labourers()
+	{
+		document.getElementById("_Main_Agricultural_Labourers").classList.toggle("show");
+	}
+	function Industries()
+	{
+		document.getElementById("_Industries").classList.toggle("show");
+	}
+	
+	var infotext = d3.select("body").select("svg")
+					.append("text")
+					.attr("x", 500)
+					.attr("y", 150)
+					.attr("text-anchor", "middle")
+					.style("font-weight", "bold")
+					.text("Click on Dropdown menu to choose different heat map of India");
 
 	// Close the dropdown if the user clicks outside of it
 	window.onclick = function(e) {
@@ -41224,6 +41271,72 @@ var distData =
 		}
 	  }
 	}
+	
+	var tip = d3.tip().attr('class','d3-tip').html(function(){
+		var str1=this.getAttribute('title');
+		var str2= this.parentNode.getAttribute('title');
+		var str3 =str1 +" : " + str2;
+		return str3;
+	});
+	var svg = d3.select('body').select('svg');
+	svg.call(tip);
+	svg.selectAll('g').selectAll('path').on('mouseover',tip.show).on('mouseout',tip.hide);
+	
+	//Make an SVG Container
+	var svgContainer = d3.select("body").append("svg")
+                                    .attr("width", 400)
+                                   .attr("height", 1000);
+ //Draw the Rectangle
+	var rectangle1 = svgContainer.append("rect")
+                       .attr("x", 100)
+                       .attr("y", 50)
+                       .attr("width", 150)
+					   .attr("height", 50)
+					   .attr("fill","red");
+	var rectangle2 = svgContainer.append("rect")
+                       .attr("x", 100)
+                       .attr("y", 100)
+                       .attr("width", 150)
+					   .attr("height", 50)
+					   .attr("fill","blue");
+	var rectangle3 = svgContainer.append("rect")
+                       .attr("x", 100)
+                       .attr("y", 150)
+                       .attr("width", 150)
+					   .attr("height", 50)
+					   .attr("fill","yellow");
+	var rectangle4 = svgContainer.append("rect")
+                       .attr("x", 100)
+                       .attr("y", 200)
+                       .attr("width", 150)
+					   .attr("height", 50)
+					   .attr("fill","green");
+	var text1 = svgContainer.append("text")
+			.attr("x",175)
+			.attr("y",75)
+			.attr("text-anchor", "middle")
+			.style("font-weight", "bold");
+	var text2 = svgContainer.append("text")
+			.attr("x",175)
+			.attr("y",125)
+			.attr("text-anchor", "middle")
+			.style("font-weight", "bold");
+	var text3 = svgContainer.append("text")
+			.attr("x",175)
+			.attr("y",175)
+			.attr("text-anchor", "middle")
+			.style("font-weight", "bold");
+	var text4 = svgContainer.append("text")
+			.attr("x",175)
+			.attr("y",225)
+			.attr("text-anchor", "middle")
+			.style("font-weight", "bold");
+	var text5 = svgContainer.append("text")
+			.attr("x",175)
+			.attr("y",275)
+			.attr("text-anchor", "middle")
+			.style("font-weight", "bold")
+			.text("Respective Value of Colour");
 	var dist_data = [];
 	var Visualization = function(v1){
 		for(var i=0; i<numdist; i++)
@@ -41231,24 +41344,79 @@ var distData =
 			switch(v1){
 			case 1 : //Total Population
 				dist_data[i] = distData[i].TP;
+				infotext.text("Heat map of Total Population of India");
 				break;
 			case 2: //Percentage Male Population
 				dist_data[i] = (distData[i].TPM*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Male Population of India");
 				break;
 			case 3: //Percentage Female Population
 				dist_data[i] = (distData[i].TPF*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Female Population of India");
 				break;
 			case 4://Population density
 				dist_data[i] = distData[i].TP/distData[i].Area;
+				infotext.text("Heat map of Population density of India");
 				break;
 			case 5://Literacy Percentage Person
 				dist_data[i] = (distData[i].LP*100)/distData[i].TP;
+				infotext.text("Heat map of Literacy Percentage Person of India");
 				break;
 			case 6://Literacy Percentage Male
 				dist_data[i] = (distData[i].LPM*100)/distData[i].TPM;
+				infotext.text("Heat map of Literacy Percentage Male of India");
 				break;
 			case 7://Literacy Percentage Female
 				dist_data[i] = (distData[i].LPF*100)/distData[i].TPF;
+				infotext.text("Heat map of Literacy Percentage Female of India");
+				break;
+			case 8://Percentage Worker Population Person
+				dist_data[i] = (distData[i].TWP*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Worker Population Person of India");
+				break;
+			case 9://Percentage Worker Population Male
+				dist_data[i] = (distData[i].TWPM*100)/distData[i].TPM;
+				infotext.text("Heat map of Percentage Worker Population Male of India");
+				break;
+			case 10://Percentage Worker Population Female
+				dist_data[i] = (distData[i].TWPF*100)/distData[i].TPF;
+				infotext.text("Heat map of Percentage Worker Population Female of India");
+				break;
+			case 11://Percentage Main Working Population Person
+				dist_data[i] = (distData[i].MWP*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Main Working Population Person of India");
+				break;
+			case 12://Percentage Main Working Population Male
+				dist_data[i] = (distData[i].MWPM*100)/distData[i].TPM;
+				infotext.text("Heat map of Percentage Main Working Population Male of India");
+				break;
+			case 13://Percentage Main Working Population Female
+				dist_data[i] = (distData[i].MWPF*100)/distData[i].TPF;
+				infotext.text("Heat map of Percentage Main Working Population Female of India");
+				break;
+			case 14://Percentage Main Agricultural Labourers Person
+				dist_data[i] = (distData[i].MALP*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Main Agricultural Labourers Person of India");
+				break;
+			case 15://Percentage Main Agricultural Labourers Male
+				dist_data[i] = (distData[i].MALPM*100)/distData[i].TPM;
+				infotext.text("Heat map of Percentage Main Agricultural Labourers Person of India");
+				break;
+			case 16://Percentage Main Agricultural Labourers Female
+				dist_data[i] = (distData[i].MALPF*100)/distData[i].TPF;
+				infotext.text("Heat map of Percentage Main Agricultural Labourers Female of India");
+				break;
+			case 17://Percentage Main Household Industries Population Person
+				dist_data[i] = (distData[i].MHIP*100)/distData[i].TP;
+				infotext.text("Heat map of Percentage Main Household Industries Population Person of India");
+				break;
+			case 18://Percentage Main Household Industries Population  Male
+				dist_data[i] = (distData[i].MHIPM*100)/distData[i].TPM;
+				infotext.text("Heat map of Percentage Main Household Industries Population Male of India");
+				break;
+			case 19://Percentage Main Household Industries Population Female
+				dist_data[i] = (distData[i].MHIPF*100)/distData[i].TPF;
+				infotext.text("Heat map of Percentage Main Household Industries Population Female of India");
 				break;
 			default:
 				dist_data[i] = distData[i].TP;
@@ -41267,43 +41435,47 @@ var distData =
 			min = Math.min.apply(null, dist_data);
 			max = Math.max.apply(null, dist_data);
 		}
+		
 		console.log(min);
 		console.log(max);
-		var colours = ["lightblue", "red"];
+		var colour,colours = ["lightblue", "red"];
 		if(v1 ==4)
 		{
-			var colour = d3.scale.log()
+			colour = d3.scale.log()
 					 .domain([min,max])
 					 .range(colours);
 
 		}
 		else
 		{
-			var colour = d3.scale.linear()
+			colour = d3.scale.linear()
 					 .domain([min,max])
 					 .range(colours);
 
 		}
-		
+		var diff = max-min;
+		var b=min + diff/3, c=min + 2*diff/3;
+		rectangle1.attr("fill", colour(min));
+		rectangle2.attr("fill", colour(b));
+		rectangle3.attr("fill", colour(c));
+		rectangle4.attr("fill", colour(max));
+		text1.text(min.toFixed(3));
+		text2.text(b.toFixed(3));
+		text3.text(c.toFixed(3));
+		text4.text(max.toFixed(3));
+				
 		for(var i=0; i<numdist; i++)
 		{
+			
 			var dist_code = distData[i].District;
 			var sel = d3.select('body').select("svg")
-				.select("path"+"#"+dist_code)
-				.style("fill", colour(dist_data[i]));
+				.select("path"+"#"+dist_code);
+				sel.style("fill", colour(dist_data[i]));
+			
 		
 		};
 	
 	};
-	var tip = d3.tip().attr('class','d3-tip').html(function(){
-		var str1=this.getAttribute('title');
-		var str2= this.parentNode.getAttribute('title');
-		var str3 =str1 +" : " + str2;
-		return str3;
-	});
-	var svg = d3.select('body').select('svg');
-	svg.call(tip);
-	svg.selectAll('g').selectAll('path').on('mouseover',tip.show).on('mouseout',tip.hide);
 	
 	
 	
