@@ -119,7 +119,7 @@ li.dropdown {
 			</div>
 		</li>
 		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Working_Population()">Main Working Population</a>
+			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Working_Population()">Working Population</a>
 			<div class="dropdown-content" id="_Main_Working_Population">
 				<a onclick=Visualization(11) href="#">Percentage Main Working Population Person</a>
 				<a onclick=Visualization(12) href="#">Percentage Main Working Population Male</a>
@@ -127,7 +127,7 @@ li.dropdown {
 			</div>
 		</li>
 		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Agricultural_Labourers()">Main Agricultural Labourers</a>
+			<a href="javascript:void(0)" class="dropbtn" onclick="Main_Agricultural_Labourers()">Agricultural Labourers</a>
 			<div class="dropdown-content" id="_Main_Agricultural_Labourers">
 				<a onclick=Visualization(14) href="#">Percentage Main Agricultural Labourers Person</a>
 				<a onclick=Visualization(15) href="#">Percentage Main Agricultural Labourers Male</a>
@@ -135,7 +135,7 @@ li.dropdown {
 			</div>
 		</li>
 		<li class="dropdown">
-			<a href="javascript:void(0)" class="dropbtn" onclick="Industries()">Main Household Industries Population</a>
+			<a href="javascript:void(0)" class="dropbtn" onclick="Industries()">Household Industries Population</a>
 			<div class="dropdown-content" id="_Industries">
 				<a onclick=Visualization(17) href="#">Percentage Main Household Industries Population Person</a>
 				<a onclick=Visualization(18) href="#">Percentage Main Household Industries Population Male</a>
@@ -41407,15 +41407,15 @@ var distData =
 				infotext.text("Heat map of Percentage Main Agricultural Labourers Female of India");
 				break;
 			case 17://Percentage Main Household Industries Population Person
-				dist_data[i] = (distData[i].MHIP*100)/distData[i].TP;
+				dist_data[i] = (distData[i].MHIP*100)/distData[i].NOH;
 				infotext.text("Heat map of Percentage Main Household Industries Population Person of India");
 				break;
 			case 18://Percentage Main Household Industries Population  Male
-				dist_data[i] = (distData[i].MHIPM*100)/distData[i].TPM;
+				dist_data[i] = (distData[i].MHIPM*100)/distData[i].NOH;
 				infotext.text("Heat map of Percentage Main Household Industries Population Male of India");
 				break;
 			case 19://Percentage Main Household Industries Population Female
-				dist_data[i] = (distData[i].MHIPF*100)/distData[i].TPF;
+				dist_data[i] = (distData[i].MHIPF*100)/distData[i].NOH;
 				infotext.text("Heat map of Percentage Main Household Industries Population Female of India");
 				break;
 			default:
